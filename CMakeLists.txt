@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project(teste)
+include_directories(subdiretorio)
+add_subdirectory(subdiretorio)
+add_executable(teste hellomake.c)
+target_link_libraries(teste PUBLIC subdiretorio)
